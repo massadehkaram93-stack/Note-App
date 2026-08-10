@@ -10,15 +10,15 @@ https://massadehkaram93-stack.github.io/Element-Arena/
 
 # ✨ Features
 
-📝 Create, edit, and delete notes
-💾 Save notes using LocalStorage
-🔍 Search notes
-📌 Pin / manage important notes
-🕒 Display note creation / update information
-📱 Fully responsive design
-🌙 Dark / Light mode
-💻 Clean and interactive user interface
-⚡ Smooth animations and transitions
+- 📝 Create, edit, and delete notes
+- 💾 Save notes using LocalStorage
+- 🔍 Search notes
+- 📌 Pin / manage important notes
+- 🕒 Display note creation / update information
+- 📱 Fully responsive design
+- 🌙 Dark / Light mode
+- 💻 Clean and interactive user interface
+- ⚡ Smooth animations and transitions
 
 ---
 
