@@ -6,7 +6,7 @@ An Note App Built White **HTML**, **CSS**, and **Vanilla JavaScript** Responsive
 
 # 🎮 Live Demo
 
-https://massadehkaram93-stack.github.io/Element-Arena/
+ https://massadehkaram93-stack.github.io/Note-App/
 
 ---
 
