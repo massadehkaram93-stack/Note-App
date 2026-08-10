@@ -1,0 +1,57 @@
+* {
+    padding : 0px ;
+    margin: 0px ;
+    box-sizing: border-box ;
+    text-decoration: none ;
+    list-style: none ;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale;
+}   
+
+:root { 
+    --body-bg : white ; 
+    --section-bg : #f5f5f5; 
+    --card-bg : #e6e3e3; 
+
+    --pure-text : oklch(56% 0.021 213.5); 
+    --main-text : black ; 
+
+    --svg-active : oklch(78% 0.16 85); /* أصفر نشط */
+    --sun-svg : #f59e0b ; 
+    --moon-svg : #a855f7 ; 
+    --not-active-svg : #9ca3af ; 
+    
+    --btn : oklch(82% 0.18 85) ; /* زر أصفر واضح */
+    --btn-hover : oklch(75% 0.17 85) ; /* أصفر أغمق قليلاً عند التمرير */
+    --btn-active : oklch(68% 0.16 85); /* أصفر عميق عند الضغط */
+
+    --graph-bg : oklch(85% 0.10 90) ; /* خلفية رسم بياني صفراء هادئة */
+
+    --main-shadow : rgba(0, 0, 0, 0.301) ; 
+
+    --special-card-bg : linear-gradient(135deg, #fbbf24 0%, #78350f 100%); /* تدرج أصفر ذهبي إلى بني دافئ */
+    --special-pure-text : #fef3c7 ; /* نص أصفر فاتح جداً */
+    
+    --container-bg : #f9fafb ; 
+} 
+
+body.dark { 
+    --body-bg : rgba(0, 0, 0, 0.678) ; 
+    --container-bg: #111827; 
+    --section-bg: #1f2937; 
+    --card-bg: #374151; 
+    --pure-text : oklch(56% 0.021 213.5); 
+    --main-text : white ; 
+    --svg-active: oklch(85% 0.15 85); /* زيادة إضاءة الأصفر النشط ليبرز في العتمة */
+    --sun-svg: #f59e0b; 
+    --moon-svg: #c084fc; 
+    --not-active-svg: #6b7280; 
+    --btn: oklch(78% 0.16 85); /* زر أصفر متناسق مع الخلفية الداكنة */
+    --btn-hover: oklch(70% 0.15 85); 
+    --btn-active: oklch(62% 0.14 85); 
+    --graph-bg: oklch(55% 0.08 90); /* تعتيم خلفية الرسم البياني الأصفر لراحة العين */
+    --main-shadow: rgba(0, 0, 0, 0.6); 
+    --special-card-bg: linear-gradient(135deg, #78350f 0%, #451a03 100%); /* تدرج داكن فخم يعتمد على الأصفر البني */
+    --special-pure-text: #fbbf24; /* نص أصفر مضيء وواضح */
+}

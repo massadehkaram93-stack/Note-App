@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Note app</title>
+</head>
+
+<body>
+
+    <section class="app">
+
+        <div class="humbarger-menu">
+
+            <div class="left-section">
+
+                <div class="logo">
+                    <svg width="38" height="38">
+                        <use href="#logo-svg"></use>
+                    </svg>
+                    <span>Micro Note</span>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li class="nav-li all-notes active">
+                            <svg width="24" height="24" class="all-notes nav-li">
+                                <use href="#all-notes-svg" class="all-notes nav-li"></use>
+                            </svg>
+                            <button class="nav-li all-nodes">All nodes</button>
+                        </li>
+
+                        <li class="nav-li archive-notes">
+                            <svg width="24" height="24" class="archive-notes nav-li ">
+                                <use href="#archive-svg" class="archive-notes nav-li"></use>
+                            </svg>
+                            <button class="nav-li archive archive-notes">Archive</button>
+                        </li>
+
+                        <li class="nav-li deleted-notes ">
+                            <svg width="24" height="24" class="deleted-notes nav-li">
+                                <use href="#trash-svg" class="deleted-notes nav-li"></use>
+                            </svg>
+                            <button class="nav-li trash deleted-notes">Trash</button>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="tags">
+                    <ul>
+                        <li class="main-li">
+                            <button class="new-tag">+ New Tage</button>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <button class="humbarger-menu-btn">
+            <div class="first"></div>
+            <div class="middle"></div>
+            <div class="last"></div>
+        </button>
+
+        <div class="ui-overlay"></div>
+
+        <div class="main-section">
+
+            <div class="top-card">
+
+                <div class="search-box">
+                    <label for="search-input">
+                        <svg width="24" height="24">
+                            <use href="#search-svg"></use>
+                        </svg>
+                    </label>
+                    <input type="text" id="search-input" class="search-input" placeholder="Search Note...">
+                </div>
+
+                <label class="mode">
+                    <svg width="24" height="24" class="moon">
+                        <use href="#moon-svg"></use>
+                    </svg>
+                    <input type="checkbox">
+                    <div class="slider"></div>
+                    <svg width="24" height="24" class="sun">
+                        <use href="#sun-svg"></use>
+                    </svg>
+                </label>
+
+                <div class="action-box">
+
+                    <button class="filter-action">
+                        <svg width="24" height="24" class="filter-action">
+                            <use href="#filter-svg" class="filter-action"></use>
+                        </svg>
+                    </button>
+
+                    <button class="add-action">
+                        <svg width="28" height="28" class="add-action">
+                            <use href="#add-svg" class="add-action"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="main-card ">
+
+                <div class="notes-space"></div>
+                
+                <div class="add-notes-space">
+
+                    <input placeholder="Title" type="text" class="title-input">
+                    
+                    <div class="mini-title">Type Area</div>
+
+                    <div contenteditable="true" class="type-area">
+                        
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+        
+        <div class="filter-menu">
+            <ul>
+                <li class="filter-li active all-notes">
+                    <svg width="24" height="24" class="filter-li">
+                        <use href="#all-notes-svg" class="filter-li"></use>
+                    </svg>
+                    <button class="filter-li">All Note</button>
+                </li>
+
+                <li class="filter-li pinning-notes">
+                    <svg width="24" height="24" class="filter-li">
+                        <use href="#pin-svg" class="filter-li"></use>
+                    </svg>
+                    <button class="filter-li">Pinned</button>
+                </li>
+
+                <li class="filter-li tag-notes" >
+                    <svg width="24" height="24" class="filter-li">
+                        <use href="#tag-svg" class="filter-li"></use>
+                    </svg>
+                    <button class="filter-li">Tag</button>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <svg style="display:none;">
+        <defs>
+            <symbol id="logo-svg" viewBox="0 0 100 100">
+                <path d="M25 45 C 25 25, 75 25, 75 45 C 75 65, 50 80, 50 80" fill="none" stroke="#eab308"
+                    stroke-width="10" stroke-linecap="round" />
+
+                <path d="M40 35 C 50 45, 60 45, 70 35" fill="none" stroke="#b45309" stroke-width="8"
+                    stroke-linecap="round" opacity="0.7" />
+
+                <circle cx="50" cy="80" r="6" fill="#b45309" />
+            </symbol>
+        </defs>
+    
+        <defs>
+            <!-- All Notes Icon Symbol -->
+            <symbol id="all-notes-svg" viewBox="0 0 100 100">
+                <rect x="25" y="20" width="45" height="55" rx="5" fill="none" stroke="currentColor" stroke-width="6"
+                    opacity="0.5" />
+                <rect x="35" y="30" width="45" height="55" rx="5" fill="none" stroke="currentColor" stroke-width="8"
+                    stroke-linecap="round" />
+                <line x1="47" y1="45" x2="68" y2="45" stroke="currentColor" stroke-width="6" stroke-linecap="round" />
+                <line x1="47" y1="58" x2="68" y2="58" stroke="currentColor" stroke-width="6" stroke-linecap="round" />
+            </symbol>
+
+            <!-- Archive Icon Symbol -->
+            <symbol id="archive-svg" viewBox="0 0 100 100">
+                <path d="M20 45 L20 75 C20 80, 25 85, 30 85 L70 85 C75 85, 80 80, 80 75 L80 45" fill="none"
+                    stroke="currentColor" stroke-width="8" stroke-linejoin="round" />
+                <path d="M15 25 L85 25 L85 45 L15 45 Z" fill="none" stroke="currentColor" stroke-width="8"
+                    stroke-linejoin="round" />
+                <path d="M40 60 L60 60" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" />
+            </symbol>
+
+            <!-- Trash Icon Symbol -->
+            <symbol id="trash-svg" viewBox="0 0 100 100">
+                <path d="M30 38 L34 80 C34.5 83, 37.5 85, 41 85 L59 85 C62.5 85, 65.5 83, 66 80 L70 38" fill="none"
+                    stroke="currentColor" stroke-width="8" stroke-linejoin="round" stroke-linecap="round" />
+                <line x1="22" y1="38" x2="78" y2="38" stroke="currentColor" stroke-width="8" stroke-linecap="round" />
+                <path d="M42 38 V26 C42 23, 44 21, 47 21 H53 C56 21, 58 23, 58 26 V38" fill="none" stroke="currentColor"
+                    stroke-width="7" stroke-linejoin="round" stroke-linecap="round" />
+                <line x1="43" y1="50" x2="43" y2="73" stroke="currentColor" stroke-width="6" stroke-linecap="round"
+                    opacity="0.6" />
+                <line x1="57" y1="50" x2="57" y2="73" stroke="currentColor" stroke-width="6" stroke-linecap="round"
+                    opacity="0.6" />
+            </symbol>
+        </defs>
+
+        <defs>
+            <symbol id="search-svg" viewBox="0 0 24 24">
+                <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+
+                <line x1="21" y1="21" x2="16.65" y2="16.65" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+            </symbol>
+        </defs>
+
+        <defs>
+            <symbol id="sun-svg" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path
+                    d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </symbol>
+
+            <symbol id="moon-svg" viewBox="0 0 24 24">
+                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+            </symbol>
+        </defs>
+
+            <!-- Filter Icon Symbol -->
+        <symbol id="filter-svg" viewBox="0 0 100 100">
+            <!-- تم التأكد من تفريغ الخلفية fill="none" -->
+            <path d="M20 25 L80 25 L56 54 L56 80 L44 80 L44 54 Z" fill="none" stroke="currentColor" stroke-width="8"
+                stroke-linejoin="round" stroke-linecap="round" />
+            <line x1="32" y1="38" x2="68" y2="38" stroke="currentColor" stroke-width="6" stroke-linecap="round"
+                opacity="0.7" />
+        </symbol>
+
+        <symbol id="add-svg" viewBox="0 0 100 100">
+            <!-- تم إضافة fill="none" صريحة لعنصر الخطوط إن لزم -->
+            <line x1="50" y1="25" x2="50" y2="75" stroke="currentColor" stroke-width="8" stroke-linecap="round" fill="none" />
+            <line x1="25" y1="50" x2="75" y2="50" stroke="currentColor" stroke-width="8" stroke-linecap="round" fill="none" />
+        </symbol>
+
+
+        <defs>
+            <symbol id="pin-svg" viewBox="0 0 100 100">
+                <line x1="50" y1="65" x2="50" y2="85" stroke="currentColor" stroke-width="8" stroke-linecap="round" />
+                <path d="M25 65 L75 65 L67 55 L67 30 C67 20, 33 20, 33 30 L33 55 Z" fill="none" stroke="currentColor"
+                    stroke-width="8" stroke-linejoin="round" stroke-linecap="round" />
+                <line x1="30" y1="42" x2="70" y2="42" stroke="currentColor" stroke-width="6" stroke-linecap="round"
+                    opacity="0.8" />
+            </symbol>
+
+            <symbol id="tag-svg" viewBox="0 0 100 100">
+                <path d="M82 50 L50 82 C46 86, 39 86, 35 82 L18 65 C14 61, 14 54, 18 50 L50 18 L82 18 Z" fill="none"
+                    stroke="currentColor" stroke-width="8" stroke-linejoin="round" stroke-linecap="round" />
+                <circle cx="38" cy="38" r="6" fill="currentColor" />
+            </symbol>
+        </defs>
+
+        <defs>
+            <symbol id="restore-svg" viewBox="0 0 100 100">
+                <path d="M25 50 A25 25 0 1 1 32.5 67.5" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" />
+                <polyline points="15 50 25 50 25 40" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+            </symbol>
+        <defs/>
+    </svg>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
