@@ -1,5 +1,7 @@
 # Micro Note 
+
 An Note App Built White **HTML**, **CSS**, and **Vanilla JavaScript** Responsive On All Devices And Clean JavaScript Code   
+
 ---
 
 # 🎮 Live Demo
